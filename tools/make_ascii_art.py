@@ -39,7 +39,7 @@ BAR_T0, BAR_DUR = 0.85, 2.0
 SWAP_T = BAR_T0 + BAR_DUR + 1.0
 
 # rows containing '+' eye cells (from the art) and per-eye column zones
-EYE_ROWS = range(20, 28)
+EYE_ROWS = range(20, 30)
 LEFT_ZONE, RIGHT_ZONE = range(10, 42), range(56, 86)
 SCAN_RADIUS = 4    # '@' this close to '+' runs on both sides = pupil
 
@@ -157,8 +157,8 @@ def emit_svg(lines, p):
     art_rows = [row_svg(lines, i, p, GLITCH_ROWS.get(i)) for i in range(rows_n)]
 
     last_row_y = ART_Y0 + (rows_n - 1) * LH
-    bar_y = last_row_y + 16
-    card_h = bar_y + 26
+    bar_y = last_row_y + 24
+    card_h = bar_y + 28
 
     boot = [
         (f'<tspan fill="{p["purple"]}">$</tspan> whoami', p["fg"]),

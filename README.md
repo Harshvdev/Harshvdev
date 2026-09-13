@@ -16,8 +16,8 @@
      It boots up, renders row by row, and the eyes blink. -->
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Harshvdev/Harshvdev/main/assets/harsh_ascii_dark.svg">
-  <img width="671" src="https://raw.githubusercontent.com/Harshvdev/Harshvdev/main/assets/harsh_ascii_light.svg" alt="ASCII terminal render of my profile logo — red and purple eyes glowing">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Harshvdev/Harshvdev/main/assets/harsh_ascii_dark.svg?v=3">
+  <img width="671" src="https://raw.githubusercontent.com/Harshvdev/Harshvdev/main/assets/harsh_ascii_light.svg?v=3" alt="ASCII terminal render of my profile logo — red and purple eyes glowing">
 </picture>
 
 </div>
