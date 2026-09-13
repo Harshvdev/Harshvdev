@@ -159,7 +159,7 @@ def emit_svg(lines, p):
 
     boot = [
         (f'<tspan fill="{p["purple"]}">$</tspan> whoami', p["fg"]),
-        ("harsh — builder · uttar pradesh · in", p["dim"]),
+        ("harsh — builder · in", p["dim"]),
         (f'<tspan fill="{p["purple"]}">$</tspan> ./animate pfp.ascii --eyes=neon', p["fg"]),
     ]
     boot_lines = "".join(
@@ -186,11 +186,15 @@ glowing red and purple eyes that blink and surge.</desc>
 <rect x="0.5" y="0.5" width="{CARD_W - 1}" height="{CARD_H - 1}" rx="10"
  fill="{p["panel"]}" stroke="{p["border"]}"/>
 <rect x="1" y="1" width="{CARD_W - 2}" height="{HEADER_H}" fill="{p["header"]}" clip-path="url(#hdr)"/>
-<circle cx="18" cy="{HEADER_H // 2 + 1}" r="4.5" fill="#ff5f57"/>
-<circle cx="34" cy="{HEADER_H // 2 + 1}" r="4.5" fill="#febc2e"/>
-<circle cx="50" cy="{HEADER_H // 2 + 1}" r="4.5" fill="#28c840"/>
+<rect x="14" y="10" width="18" height="14" rx="2.5" fill="none" stroke="{p["title"]}" stroke-width="1.2" opacity="0.8"/>
+<path d="M17 14 l3 3 -3 3 M23 20 h4" stroke="{p["title"]}" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.8"/>
 <text x="{CARD_W // 2}" y="{HEADER_H // 2 + 4}" text-anchor="middle" font-size="10.5"
- fill="{p["title"]}">harsh@github: ~/profile — zsh</text>
+ fill="{p["title"]}">harsh@linux: ~/profile — bash</text>
+<g opacity="0.75">
+<line x1="{CARD_W - 58}" y1="{HEADER_H // 2 + 1}" x2="{CARD_W - 48}" y2="{HEADER_H // 2 + 1}" stroke="{p["title"]}" stroke-width="1.2" stroke-linecap="round"/>
+<rect x="{CARD_W - 39}" y="{HEADER_H // 2 - 4}" width="10" height="10" rx="1.5" fill="none" stroke="{p["title"]}" stroke-width="1.2"/>
+<path d="M{CARD_W - 20} {HEADER_H // 2 - 4} l8 8 M{CARD_W - 12} {HEADER_H // 2 - 4} l-8 8" stroke="{p["title"]}" stroke-width="1.2" stroke-linecap="round"/>
+</g>
 {boot_lines}
 <g><animate attributeName="opacity" values="1;1;0.95;1;1;0.97;1;1"
  keyTimes="0;0.13;0.14;0.15;0.55;0.56;0.57;1" dur="9s" repeatCount="indefinite"/>

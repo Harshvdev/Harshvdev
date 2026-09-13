@@ -1,38 +1,37 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=230&section=header&text=Hey,%20I'm%20Harsh&fontSize=55&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=AI-Powered%20Builder%20%E2%9C%A6%20Anime%20Enjoyer%20%E2%9C%A6%20Solo%20Dev&descAlignY=55&descSize=18" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d0205,50:800014,100:e60026&height=230&section=header&text=Hey,%20I'm%20Harsh&fontSize=55&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=AI-Powered%20Builder%20%E2%9C%A6%20Anime%20Enjoyer%20%E2%9C%A6%20Solo%20Dev&descAlignY=55&descSize=18" width="100%"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=F7A8B8&center=true&vCenter=true&width=650&lines=I+don't+write+code...+I+direct+it.;Prompt+engineer+by+day%2C+shipper+by+night.;Turning+ideas+into+real+products+with+AI.;Currently+building%3A+MeZShip+%F0%9F%9A%80" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=FF2E4C&center=true&vCenter=true&width=650&lines=Full-stack+builder+%26+CS+student.;Passionate+about+building+%26+creating+things.;Turning+ideas+into+software.;Dreaming+big%2C+learning+every+day.+%E2%9C%A8" alt="Typing SVG" />
 
 </div>
 
 <br/>
 
-## 🖥️ The Terminal Me
+## 🖥️ Terminal
 
 <div align="center">
 
-<!-- 🎨 This ASCII card is generated from my profile picture by tools/make_ascii_art.py.
-     It boots up, renders row by row, and the eyes blink. Yes, the eyes are really that color. -->
+<!-- 🎨 This ASCII terminal card renders my profile logo by tools/make_ascii_art.py.
+     It boots up, renders row by row, and the eyes blink. -->
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Harshvdev/Harshvdev/main/assets/harsh_ascii_dark.svg">
-  <img width="671" src="https://raw.githubusercontent.com/Harshvdev/Harshvdev/main/assets/harsh_ascii_light.svg" alt="ASCII terminal render of my profile picture — red and purple eyes glowing">
+  <img width="671" src="https://raw.githubusercontent.com/Harshvdev/Harshvdev/main/assets/harsh_ascii_light.svg" alt="ASCII terminal render of my profile logo — red and purple eyes glowing">
 </picture>
 
 </div>
 
 <br/>
 
-## 🌸 About Me
+## ✨ About Me
 
-I'm a CS student who builds full products — but my "IDE" is a conversation. I don't hand-write code; I architect systems, direct AI agents, and ship. Think of me less as a traditional dev and more as a **product engineer working through an AI copilot** — I own the vision, the architecture, and the decisions; the AI writes the syntax.
+I'm a CS student and product engineer passionate about building full-stack web applications. I combine software engineering fundamentals with modern AI-assisted workflows to design clean systems, explore new ideas, and build software from the ground up.
 
-- 🧠 I design the systems, prompts, and architecture — AI executes
-- 🖥️ Mainly building **web apps** — from idea to deployed product
-- 🎌 Big anime + gaming brain, it shows up in everything I build
-- 🚀 Currently deep in **MeZShip** — a proximity-based anonymous chat app for college campuses
-- 🌀 Recovering over-scoper — learning to ship narrow and iterate
+- 🧠 **Architecture & Systems**: Designing clean data models, intuitive APIs, and modular architectures
+- 🖥️ **Full-Stack Web**: Building responsive, performant products with Next.js, TypeScript, and Supabase
+- ⚡ **Passionate Builder**: Driven by dreaming big and building consistently from concept to finish
+- 🎌 **Creative Polish**: Big anime & gaming enthusiast — bringing aesthetic care and engaging UX to every build
 
 <br/>
 
@@ -43,14 +42,15 @@ I'm a CS student who builds full products — but my "IDE" is a conversation. I 
 | Project | What it is |
 |---|---|
 | 🎬 **[Aniotako](https://aniotako-gamma.vercel.app)** | Public anime watchlist platform — MAL import, live episode tracking, push notifications |
-| 🔔 **Anidropper** | Anime episode notification service with minute-level sync |
-| 📍 **MeZShip** *(in progress)* | Anonymous proximity chat for college students — real-time, ephemeral, no chat history |
+| 📍 **[MeZShip](https://mezship.vercel.app)** | Anonymous proximity chat to connect with people around you — real-time, ephemeral, zero chat history |
+| 💬 **[HearMeOuttt](https://hearmeouttt.vercel.app)** | Anonymous text-only confession platform with automated community moderation |
+| 🎙️ **[Noise-Remover-Linux](https://github.com/Harshvdev/Noise-Remover-Linux)** | Linux audio recorder app that filters background noise while preserving voice fidelity |
 
 </div>
 
 <br/>
 
-## 🛠️ Tech I Direct
+## 🛠️ Tech Arsenal
 
 <div align="center">
 <img src="https://skillicons.dev/icons?i=nextjs,typescript,tailwind,supabase,vercel,react,prisma" />
@@ -62,7 +62,7 @@ I'm a CS student who builds full products — but my "IDE" is a conversation. I 
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=Harshvdev&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" width="49%"/>
+<img src="https://github-readme-stats-anuraghazra1.vercel.app/api?username=Harshvdev&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" width="49%"/>
 <img src="https://streak-stats.demolab.com?user=Harshvdev&theme=tokyonight&hide_border=true" width="49%"/>
 
 </div>
@@ -83,64 +83,13 @@ I'm a CS student who builds full products — but my "IDE" is a conversation. I 
 
 <br/>
 
-## 🎴 Anime Corner
-
 <div align="center">
 
-<!-- The raw source behind the terminal card above — assets/ascii-art.txt -->
-<details>
-<summary>👁️ cat ascii-art.txt — view the source</summary>
-
-<div align="left">
-
-```
-                  .#@@@#:                                              :#@@@#.                  
-                 :@@@@@@@@:                                          :@@@@@@@@:                 
-                #@@@@@@@@@@@:                                      :@@@@@@@@@@@#                
-               #@@@@@@@@@@@@@@:                                  :@@@@@@@@@@@@@@#               
-             .@@@@@@@@@@@@@@@@@#                                #@@@@@@@@@@@@@@@@@.             
-             @@@@@@@@@@@@@@@@@@@@:                            :@@@@@@@@@@@@@@@@@@@@             
-            #@@@@@@@@@@@@@@@@@@@@@#                          #@@@@@@@@@@@@@@@@@@@@@#            
-           #@@@@@@@@@@@@@@@@@@@@@@@#.   ...::::::::::...   .#@@@@@@@@@@@@@@@@@@@@@@@#           
-          :@@@@@@@@@@@@@@@@@@@@@@@@@@#@@@@@@@@@@@@@@@@@@@@#@@@@@@@@@@@@@@@@@@@@@@@@@@:          
-          @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@          
-         #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#         
-        .@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@.        
-        #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#        
-       #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#       
-      #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#:      
-     :@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#      
-     #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#     
-     @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@     
-    .@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@.    
-    :@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@:    
-    :@@@@@@@@@@@@+++++++++@@++@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@++@@+++++++++@@@@@@@@@@@@:    
-    #@@@@@@@@@@@@++++++++@@@@+++@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@+++@@@@++++++++@@@@@@@@@@@@#    
-    #@@@@@@@@@@@@++++++++@@@@++++@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@++++@@@@++++++++@@@@@@@@@@@@#    
-    #@@@@@@@@@@@@@+++++++@@@@+++++@@@@@@@@@@@@@@@@@@@@@@@@@@@@+++++@@@@+++++++@@@@@@@@@@@@@#    
-    :@@@@@@@@@@@@@+++++++@@@@++++++@@@@@@@@@@@@@@@@@@@@@@@@@@++++++@@@@+++++++@@@@@@@@@@@@@:    
- ::::@@@@@@@@@@@@@@++++++@@@@++++++@@@@@@@@@@@@@@@@@@@@@@@@@@++++++@@@@++++++@@@@@@@@@@@@@@:::: 
-@@@@@@@@@@@@@@@@@@@@+++++@@@@++++++@@@@@@@@@@@@@@@@@@@@@@@@@@++++++@@@@+++++@@@@@@@@@@@@@@@@@@@@
-:#@@@@@@@@@@@@@@@@@@@@@+++@@+++++++@@@@@@@@@@@@@@@@@@@@@@@@@@+++++++@@+++@@@@@@@@@@@@@@@@@@@@@#:
-     .:@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@:.     
- .:####@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#::....::#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@####:. 
- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@.        .@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
- :#####::.#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@:      :@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#.::#####: 
-        :#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@##::##@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#:        
-       @@@@@@@#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#@@@@@@@       
-       :###:.  :#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#:  .:###:       
-                 .:#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#:.                 
-                    .:#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#:.                    
-                        :##@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@##:                        
-                            .:##@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@##:.                            
-                                  .:::####@@@@@@@@@@@@####:::.                                  
-```
+> *“Any sufficiently advanced technology is indistinguishable from magic.”*  
+> — **Arthur C. Clarke**
 
 </div>
 
-</details>
-
-</div>
 <br/>
 
 ## 🔗 Connect
@@ -148,13 +97,15 @@ I'm a CS student who builds full products — but my "IDE" is a conversation. I 
 <div align="center">
 
 <a href="https://twitter.com/harshvdev"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"/></a>
+<a href="https://www.linkedin.com/in/harshvdev/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
 <a href="mailto:harsh.vs.tech@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
-<a href="https://github.com/Harshvdev"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
 
 </div>
 
 <br/>
 
-<img src="https://komarev.com/ghpvc/?username=Harshvdev&color=f7a8b8&style=flat" align="center"/>
+<div align="center">
+<img src="https://komarev.com/ghpvc/?username=Harshvdev&color=d90429&style=flat"/>
+</div>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d0205,50:800014,100:e60026&height=100&section=footer" width="100%"/>
