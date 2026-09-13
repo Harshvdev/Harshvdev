@@ -72,7 +72,7 @@ def esc(s: str) -> str:
 def load_art():
     lines = ART.read_text().rstrip("\n").split("\n")
     assert lines and max(len(l) for l in lines) <= COLS, "art wider than COLS"
-    return lines + [""] * (0)  # rows are whatever the file has
+    return [l.ljust(COLS) for l in lines]
 
 
 def cell_kind(lines, i, j):
@@ -120,17 +120,19 @@ def eye_tspan(kind, text, p):
 
 def row_svg(lines, i, p, glitch):
     y = ART_Y0 + i * LH
+    line = lines[i].ljust(COLS)
     kinds = [cell_kind(lines, i, j) for j in range(COLS)]
     parts, cur, start = [], None, 0
     for j in range(COLS + 1):
         k = kinds[j] if j < COLS else None
         if k != cur:
+            chunk = line[start:j]
             if cur in ("red", "purple", "red_pupil", "purple_pupil"):
-                parts.append(eye_tspan(cur, lines[i][start:j], p))
-            elif cur == "fg":
-                parts.append(esc(lines[i][start:j]))
+                parts.append(eye_tspan(cur, chunk, p))
+            elif cur in ("fg", None):
+                parts.append(esc(chunk))
             cur, start = k, j
-    body = f'<text x="{ART_X}" y="{y}" fill="{p["fg"]}">{"".join(parts)}</text>'
+    body = f'<text x="{ART_X}" y="{y}" xml:space="preserve" font-size="{F}px" fill="{p["fg"]}">{"".join(parts)}</text>'
 
     animates = [
         f'<animate attributeName="opacity" begin="{REVEAL_T0 + i * REVEAL_STEP:.3f}s" '
@@ -163,13 +165,14 @@ def emit_svg(lines, p):
     boot_lines = "".join(
         f'<g opacity="0"><animate attributeName="opacity" begin="{0.15 + i * 0.22:.2f}s" '
         f'dur="0.15s" values="0;1" fill="freeze"/>'
-        f'<text x="{ART_X}" y="{52 + i * LH}" fill="{fill}">{txt}</text></g>'
+        f'<text x="{ART_X}" y="{52 + i * LH}" font-size="{F}px" fill="{fill}">{txt}</text></g>'
         for i, (txt, fill) in enumerate(boot)
     )
 
     return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {CARD_W} {CARD_H}"
  width="{CARD_W}" height="{CARD_H}" role="img" xml:space="preserve"
- font-family="'JetBrains Mono','Fira Code','Cascadia Code',Menlo,Consolas,'DejaVu Sans Mono',monospace">
+ font-family="'JetBrains Mono','Fira Code','Cascadia Code',Menlo,Consolas,'DejaVu Sans Mono',monospace"
+ font-size="{F}px">
 <title>Harsh — ASCII terminal avatar</title>
 <desc>Terminal window revealing an ASCII render of Harsh's avatar with
 glowing red and purple eyes that blink and surge.</desc>
