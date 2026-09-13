@@ -32,9 +32,8 @@ ADV = round(F * 0.602, 3)   # advance of DejaVu Sans Mono (widest common mono)
 ART_X = 17         # left edge of the art block
 ART_Y0 = 96        # baseline of the first art row
 CARD_W = round(ART_X + COLS * ADV + 18)
-CARD_H = 640
 HEADER_H = 34
-BAR_Y, BAR_H, BAR_W = 616, 7, 150
+BAR_H, BAR_W = 7, 150
 REVEAL_T0, REVEAL_STEP, REVEAL_DUR = 0.90, 0.045, 0.18
 BAR_T0, BAR_DUR = 0.85, 2.0
 SWAP_T = BAR_T0 + BAR_DUR + 1.0
@@ -157,6 +156,10 @@ def emit_svg(lines, p):
     rows_n = len(lines)
     art_rows = [row_svg(lines, i, p, GLITCH_ROWS.get(i)) for i in range(rows_n)]
 
+    last_row_y = ART_Y0 + (rows_n - 1) * LH
+    bar_y = last_row_y + 16
+    card_h = bar_y + 26
+
     boot = [
         (f'<tspan fill="{p["purple"]}">$</tspan> whoami', p["fg"]),
         ("harsh — builder · in", p["dim"]),
@@ -169,8 +172,8 @@ def emit_svg(lines, p):
         for i, (txt, fill) in enumerate(boot)
     )
 
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {CARD_W} {CARD_H}"
- width="{CARD_W}" height="{CARD_H}" role="img" xml:space="preserve"
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {CARD_W} {card_h}"
+ width="{CARD_W}" height="{card_h}" role="img" xml:space="preserve"
  font-family="'JetBrains Mono','Fira Code','Cascadia Code',Menlo,Consolas,'DejaVu Sans Mono',monospace"
  font-size="{F}px">
 <title>Harsh — ASCII terminal avatar</title>
@@ -180,10 +183,10 @@ glowing red and purple eyes that blink and surge.</desc>
 <linearGradient id="eyegrad" x1="0" y1="0" x2="1" y2="0">
 <stop offset="0" stop-color="{p["red"]}"/><stop offset="1" stop-color="{p["purple"]}"/>
 </linearGradient>
-<clipPath id="card"><rect x="1" y="1" width="{CARD_W - 2}" height="{CARD_H - 2}" rx="10"/></clipPath>
+<clipPath id="card"><rect x="1" y="1" width="{CARD_W - 2}" height="{card_h - 2}" rx="10"/></clipPath>
 <clipPath id="hdr"><rect x="1" y="1" width="{CARD_W - 2}" height="{HEADER_H}" rx="9"/></clipPath>
 </defs>
-<rect x="0.5" y="0.5" width="{CARD_W - 1}" height="{CARD_H - 1}" rx="10"
+<rect x="0.5" y="0.5" width="{CARD_W - 1}" height="{card_h - 1}" rx="10"
  fill="{p["panel"]}" stroke="{p["border"]}"/>
 <rect x="1" y="1" width="{CARD_W - 2}" height="{HEADER_H}" fill="{p["header"]}" clip-path="url(#hdr)"/>
 <rect x="14" y="10" width="18" height="14" rx="2.5" fill="none" stroke="{p["title"]}" stroke-width="1.2" opacity="0.8"/>
@@ -202,22 +205,22 @@ glowing red and purple eyes that blink and surge.</desc>
 <g opacity="0">
 <animate attributeName="opacity" begin="{BAR_T0}s" dur="0.2s" values="0;1" fill="freeze"/>
 <animate attributeName="opacity" begin="{SWAP_T:.2f}s" dur="0.25s" values="1;0" fill="freeze"/>
-<rect x="{ART_X}" y="{BAR_Y}" width="{BAR_W}" height="{BAR_H}" rx="4" fill="none"
+<rect x="{ART_X}" y="{bar_y}" width="{BAR_W}" height="{BAR_H}" rx="4" fill="none"
  stroke="{p["dim"]}" stroke-opacity="0.6"/>
-<rect x="{ART_X + 1}" y="{BAR_Y + 1}" width="0" height="{BAR_H - 2}" rx="3" fill="url(#eyegrad)">
+<rect x="{ART_X + 1}" y="{bar_y + 1}" width="0" height="{BAR_H - 2}" rx="3" fill="url(#eyegrad)">
 <animate attributeName="width" values="0;{BAR_W - 2}" begin="{BAR_T0 + 0.05:.2f}s"
  dur="{BAR_DUR}s" calcMode="spline" keySplines="0.3 0 0.7 1" keyTimes="0;1" fill="freeze"/>
 </rect>
-<text x="{ART_X + BAR_W + 10}" y="{BAR_Y + BAR_H}" font-size="10.5" fill="{p["dim"]}">rendering pfp.ascii → svg…</text>
+<text x="{ART_X + BAR_W + 10}" y="{bar_y + BAR_H}" font-size="10.5" fill="{p["dim"]}">rendering pfp.ascii → svg…</text>
 </g>
 <g opacity="0">
 <animate attributeName="opacity" begin="{SWAP_T + 0.15:.2f}s" dur="0.3s" values="0;1" fill="freeze"/>
-<text x="{ART_X}" y="{BAR_Y + BAR_H}"><tspan fill="{p["purple"]}">$</tspan><tspan fill="{p["fg"]}"> █</tspan></text>
-<text x="{ART_X + 24}" y="{BAR_Y + BAR_H}" font-size="10.5" fill="{p["dim"]}"># eyes: online · smoke: not detected</text>
+<text x="{ART_X}" y="{bar_y + BAR_H}"><tspan fill="{p["purple"]}">$</tspan><tspan fill="{p["fg"]}"> █</tspan></text>
+<text x="{ART_X + 24}" y="{bar_y + BAR_H}" font-size="10.5" fill="{p["dim"]}"># eyes: online · smoke: not detected</text>
 </g>
 <rect x="1" width="{CARD_W - 2}" height="3" fill="{p["scan"]}" opacity="0.05"
  clip-path="url(#card)">
-<animate attributeName="y" values="{HEADER_H};{CARD_H - 8};{HEADER_H}" dur="11s"
+<animate attributeName="y" values="{HEADER_H};{card_h - 8};{HEADER_H}" dur="11s"
  repeatCount="indefinite"/>
 </rect>
 </svg>
